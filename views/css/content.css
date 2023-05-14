@@ -12,15 +12,6 @@ h1
     font-weight: 700;
     text-transform: capitalize;
 }
-#containerClothing, #containerAccessories
-{
-    display: grid;
-    grid-gap: 70px 20px;
-    grid-template-columns: repeat(5, 1fr);
-    width: 90%;
-    margin: auto;
-    padding-bottom: 40px;
-}
 #box 
 {
     width: 100%;
@@ -28,6 +19,7 @@ h1
     align-content: center;
     border-radius: 10px;
     box-shadow: 1px 2px 6px 2px rgb(219, 219, 219);
+    transition: 0.5s;
 }
 #box:hover
 {
