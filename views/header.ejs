@@ -291,6 +291,22 @@
                 top: 18px;
             }
         }
+
+        .login-reg{
+            color: white !important;
+            text-decoration: none;
+            background-color: rgb(247, 72, 72);
+            width: 60px;
+            height: 20px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid rgb(247, 72, 72);
+            transition: 0.4s;
+        }
+        .login-reg:hover{
+            border: 1px solid rgb(129, 17, 17);
+            background-color: rgb(129, 17, 17);
+        }
     </style>
 </head>
 
@@ -318,7 +334,11 @@
                     <a href="cart.html"> <i class="fas fa-shopping-cart addedToCart">
                             <div id="badge"> 0 </div>
                         </i></a>
-                    <a href="#"> <i class="fas fa-user-circle userIcon"></i> </a>
+                    <% if(!login && !auth) {%>
+                        <a class="login-reg" href="/register"> <i class=""></i>Register</a>
+                    <% } else {%>
+                            <a class="login-reg" href="/logout"> <i class=""></i>Logout</a>
+                    <% } %>
                 </div>
             </div>
 
